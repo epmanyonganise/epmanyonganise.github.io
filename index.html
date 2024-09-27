@@ -7,71 +7,105 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <header>
-        <h1>Ed Panashe Manyonganise</h1>
-        <p>Software Developer | Cloud Computing Enthusiast</p>
-        <p><a href="mailto:epmanyonganise@gmail.com">epmanyonganise@gmail.com</a> | <a href="https://linkedin.com/epmanyonganise">LinkedIn</a></p>
+        <div class="container">
+            <nav>
+                <h1>Ed Manyonganise</h1>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>I am a skilled Software Developer with a strong foundation in coding, eager to contribute to innovative solutions. Currently pursuing a Master’s degree in Cloud Computing, I’m passionate about learning new technologies and working in collaborative environments.</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a skilled Software Developer with a passion for innovative solutions and cutting-edge technologies. I am currently pursuing a Master's degree in Cloud Computing at the Harare Institute of Technology, with experience in Python, PHP, JavaScript, and cloud services.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/yourusername/smarted">SmartEd</a>: Revolutionizing Learning with AI.</li>
-            <li><a href="https://github.com/yourusername/datacleanse">DataCleanse</a>: The Ultimate Deduplication Solution.</li>
-            <li><a href="https://github.com/yourusername/tweetpulse">TweetPulse</a>: Unveiling Emotions in Social Media.</li>
-            <li><a href="https://github.com/yourusername/puzzlemaster">PuzzleMaster</a>: Solving the 8-Puzzle Challenge.</li>
-            <li><a href="https://github.com/yourusername/tsuro-odyssey">Tsuro Odyssey</a>: An Interactive Journey on Your Mobile.</li>
-            <li><a href="https://github.com/yourusername/quickbrief">QuickBrief</a>: Your Intelligent Text Summarizer.</li>
-        </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="section-bg">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul class="project-list">
+                <li><a href="https://github.com/yourusername/smarted" target="_blank">SmartEd</a> - Revolutionizing Learning with AI</li>
+                <li><a href="https://github.com/yourusername/datacleanse" target="_blank">DataCleanse</a> - The Ultimate Deduplication Solution</li>
+                <li><a href="https://github.com/yourusername/tweetpulse" target="_blank">TweetPulse</a> - Unveiling Emotions in Social Media</li>
+                <li><a href="https://github.com/yourusername/puzzlemaster" target="_blank">PuzzleMaster</a> - Solving the 8-Puzzle Challenge</li>
+                <li><a href="https://github.com/yourusername/tsuro-odyssey" target="_blank">Tsuro Odyssey</a> - An Interactive Journey on Your Mobile</li>
+                <li><a href="https://github.com/yourusername/quickbrief" target="_blank">QuickBrief</a> - Your Intelligent Text Summarizer</li>
+            </ul>
+        </div>
     </section>
 
+    <!-- Experience Section -->
     <section id="experience">
-        <h2>Work Experience</h2>
-        <h3>Software Developer - Harare Institute of Technology (06/2023 - Present)</h3>
-        <ul>
-            <li>Developed an online registration platform, improving student satisfaction.</li>
-            <li>Created an online clearance system, reducing processing time by 50%.</li>
-            <li>Integrated the student portal with Pastel accounting software.</li>
-            <li>Developed a secure online voting platform, increasing voter participation.</li>
-        </ul>
-
-        <h3>Junior Information Systems Engineer - KK Afro Solutions (06/2022 - 05/2023)</h3>
-        <ul>
-            <li>Designed and maintained client information systems, improving efficiency by 20%.</li>
-            <li>Assisted with troubleshooting, reducing incident response time by 30%.</li>
-        </ul>
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <h3>Software Developer - Harare Institute of Technology (06/2023 - Present)</h3>
+                <ul>
+                    <li>Developed an online registration platform, improving student satisfaction.</li>
+                    <li>Created an online clearance system, reducing processing time by 50%.</li>
+                    <li>Integrated the student portal with Pastel accounting software.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Junior Information Systems Engineer - KK Afro Solutions (06/2022 - 05/2023)</h3>
+                <ul>
+                    <li>Designed and maintained client information systems, improving efficiency by 20%.</li>
+                    <li>Assisted with troubleshooting, reducing incident response time by 30%.</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> Python, PHP, JavaScript, Dart</li>
-            <li><strong>Frameworks:</strong> Django, Laravel, Vue.js, Flutter</li>
-            <li><strong>Version Control:</strong> Git</li>
-            <li><strong>APIs and Web Services:</strong> REST</li>
-            <li><strong>Database Management:</strong> MySQL, SQL</li>
-            <li><strong>Cloud Technologies:</strong> AWS</li>
-            <li><strong>Development Methodologies:</strong> Agile (Scrum)</li>
-        </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="section-bg">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Languages:</strong> Python, PHP, JavaScript, Dart</li>
+                <li><strong>Frameworks:</strong> Django, Laravel, Vue.js, Flutter</li>
+                <li><strong>Version Control:</strong> Git</li>
+                <li><strong>Cloud Technologies:</strong> AWS</li>
+            </ul>
+        </div>
     </section>
 
+    <!-- Education Section -->
     <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>Master of Technology in Cloud Computing - Harare Institute of Technology (Ongoing)</li>
-            <li>Bachelor of Technology in Information Technology - Harare Institute of Technology (2022)</li>
-            <li>Certificate in Higher and Tertiary Education - Harare Institute of Technology (2022)</li>
-        </ul>
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li>Master of Technology in Cloud Computing - Harare Institute of Technology (Ongoing)</li>
+                <li>Bachelor of Technology in Information Technology - Harare Institute of Technology (2022)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations or job opportunities!</p>
+            <p>Email: <a href="mailto:epmanyonganise@gmail.com">epmanyonganise@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/epmanyonganise">linkedin.com/epmanyonganise</a></p>
+        </div>
     </section>
 
     <footer>
-        <p>Contact: <a href="mailto:epmanyonganise@gmail.com">epmanyonganise@gmail.com</a></p>
-        <p>&copy; 2024 Ed Panashe Manyonganise</p>
+        <p>&copy; 2024 Ed Panashe Manyonganise | Software Developer</p>
     </footer>
 </body>
 </html>
