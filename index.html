@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ed Panashe Manyonganise - Software Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <header>
         <div class="container">
-            <nav>
-                <h1>Ed Manyonganise</h1>
+            <nav class="nav-bar">
+                <h1 class="logo">Ed Manyonganise</h1>
                 <ul>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -24,87 +26,103 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2 class="tagline">Crafting Innovative Solutions with Code</h2>
+            <p>Software Developer | Cloud Computing Enthusiast | AI Explorer</p>
+            <a href="#projects" class="btn primary-btn">View My Work</a>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
-            <p>I am a skilled Software Developer with a passion for innovative solutions and cutting-edge technologies. I am currently pursuing a Master's degree in Cloud Computing at the Harare Institute of Technology, with experience in Python, PHP, JavaScript, and cloud services.</p>
-            <a href="#contact" class="btn">Get in Touch</a>
+            <div class="about-content">
+                <p>I’m a passionate Software Developer with expertise in cloud technologies, AI, and mobile development. My mission is to create innovative and scalable solutions that make a real impact.</p>
+                <a href="#contact" class="btn">Let’s Collaborate</a>
+            </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section-bg">
+    <!-- Projects Section with Thumbnails -->
+    <section id="projects" class="section section-bg">
         <div class="container">
             <h2>Projects</h2>
-            <ul class="project-list">
-                <li><a href="https://github.com/epmanyonganise/SmartEd" target="_blank">SmartEd</a> - Revolutionizing Learning with AI</li>
-                <li><a href="https://github.com/epmanyonganise/DataCleanse" target="_blank">DataCleanse</a> - The Ultimate Deduplication Solution</li>
-                <li><a href="https://github.com/epmanyonganise/TweetPulse" target="_blank">TweetPulse</a> - Unveiling Emotions in Social Media</li>
-                <li><a href="https://github.com/epmanyonganise/PuzzleMaster" target="_blank">PuzzleMaster</a> - Solving the 8-Puzzle Challenge</li>
-                <li><a href="https://github.com/epmanyonganise/QuickBrief" target="_blank">QuickBrief</a> - Your Intelligent Text Summarizer</li>
-            </ul>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="images/smarted-thumbnail.jpg" alt="SmartEd Project">
+                    <h3>SmartEd</h3>
+                    <p>Revolutionizing Learning with AI.</p>
+                    <a href="https://github.com/epmanyonganise/SmartEd" target="_blank" class="btn secondary-btn">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <img src="images/datacleanse-thumbnail.jpg" alt="DataCleanse Project">
+                    <h3>DataCleanse</h3>
+                    <p>The Ultimate Deduplication Solution.</p>
+                    <a href="https://github.com/epmanyonganise/DataCleanse" target="_blank" class="btn secondary-btn">View on GitHub</a>
+                </div>
+                <!-- Add more project cards here -->
+            </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience">
+    <section id="experience" class="section">
         <div class="container">
             <h2>Work Experience</h2>
-            <div class="job">
-                <h3>Software Developer - Harare Institute of Technology (06/2023 - Present)</h3>
-                <ul>
-                    <li>Developed an online registration platform, improving student satisfaction.</li>
-                    <li>Created an online clearance system, reducing processing time by 50%.</li>
-                    <li>Integrated the student portal with Pastel accounting software.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Junior Information Systems Engineer - KK Afro Solutions (06/2022 - 05/2023)</h3>
-                <ul>
-                    <li>Designed and maintained client information systems, improving efficiency by 20%.</li>
-                    <li>Assisted with troubleshooting, reducing incident response time by 30%.</li>
-                </ul>
+            <div class="job-timeline">
+                <div class="job">
+                    <h3>Software Developer <span>Harare Institute of Technology</span></h3>
+                    <p>06/2023 - Present</p>
+                    <ul>
+                        <li>Developed a robust online student registration platform, enhancing satisfaction and reducing paperwork.</li>
+                        <li>Created a cloud-based mark capturing system that streamlined grade reporting.</li>
+                    </ul>
+                </div>
+                <!-- Add more job entries -->
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section with Bars -->
     <section id="skills" class="section-bg">
         <div class="container">
             <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><strong>Languages:</strong> Python, PHP, JavaScript, Dart</li>
-                <li><strong>Frameworks:</strong> Django, Laravel, Vue.js, Flutter</li>
-                <li><strong>Version Control:</strong> Git</li>
-                <li><strong>Cloud Technologies:</strong> AWS</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li>Master of Technology in Cloud Computing - Harare Institute of Technology (Ongoing)</li>
-                <li>Bachelor of Technology in Information Technology - Harare Institute of Technology (2022)</li>
-            </ul>
+            <div class="skills-bars">
+                <div class="skill-bar">
+                    <h4>Python</h4>
+                    <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <h4>PHP</h4>
+                    <div class="bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <h4>JavaScript</h4>
+                    <div class="bar"><div class="progress" style="width: 80%;"></div></div>
+                </div>
+                <!-- Add more skills -->
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>Feel free to reach out for collaborations or job opportunities!</p>
+            <p>If you’re interested in collaborating or just want to say hi, feel free to drop me a message.</p>
             <p>Email: <a href="mailto:epmanyonganise@gmail.com">epmanyonganise@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/epmanyonganise">linkedin.com/epmanyonganise</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/epmanyonganise" target="_blank">linkedin.com/epmanyonganise</a></p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Ed Panashe Manyonganise | Software Developer</p>
+        <div class="container">
+            <p>&copy; 2024 Ed Panashe Manyonganise. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
